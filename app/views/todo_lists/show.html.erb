@@ -6,7 +6,13 @@
 
 
 <div id="todo_items_wrapper">
-  <%= render @todo_list.todo_items %>
+  <!-- Each item must have is own unique numbered classes to be struck out individually -->
+
+  <% @todo_list.todo_items.each_with_index do |todo_item, i| %>
+    <%= render "todo_items/todo_item", :todo_item => todo_item, :i => i %>
+  <% end %>
+
+  
   <div id="form">
     <%= render "todo_items/form" %>
   </div>
