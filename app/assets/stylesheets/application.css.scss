@@ -222,4 +222,44 @@ input[type="submit"] {
     color: white;
   }
 }
+
+// .button {
+//     background-color: white;
+//     border: none;
+//     color: $dark;
+//     padding: 15px 32px;
+//     text-align: center;
+//     text-decoration: none;
+//     display: block;
+//     font-size: 16px;
+//     margin: 4px 2px;
+//     cursor: pointer;
+//     border-radius: 12px;
+// }
+.button {
+    display:block; /* change this from inline-block */
+    width:20%; /* setting the width */
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 0px 3px 0px;
+    position:relative;
+    font-style:normal;
+    font-weight:normal;
+    font-family:"Open Sans";
+    font-size:18px;
+    outline:none;
+    color:#fff;
+    border:none;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background-color:#008b8b;
+    // border-bottom:1px solid #00FFFF;
+    // border-left:1px solid #00FFFF;
+}
+
 ::-webkit-input-placeholder { color: $dark; }
